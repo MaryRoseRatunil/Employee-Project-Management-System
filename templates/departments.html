@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Departments - Employee Project Management{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Departments</h1>
+    <hr>
+    
+    <div class="info-box">
+        <p>Manage departments here. For API access, visit:</p>
+        <p><a href="/api/departments/" class="api-link">/api/departments/</a></p>
+    </div>
+
+    <div class="form-section">
+        <h2>Create New Department</h2>
+        <form id="departmentForm" class="crud-form">
+            <div class="form-group">
+                <label for="department_name">Department Name:</label>
+                <input type="text" id="department_name" name="department_name" required>
+            </div>
+            <button type="submit" class="submit-button">Create Department</button>
+        </form>
+    </div>
+
+    <div id="message" class="message"></div>
+    <div id="departmentList" class="list-section"></div>
+</div>
+
+<script src="/static/js/departments.js"></script>
+{% endblock %}

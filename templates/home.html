@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Employee Project Management - Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="welcome-section">
+        <h1>Employee Project Management System</h1>
+        <hr>
+        <p class="welcome-text">Welcome to the Employee Project Management System. Manage your employees, departments, and projects</p>
+    </div>
+
+    <div class="actions-section">
+        <h2>Quick Actions</h2>
+        <div class="button-grid">
+            <a href="/employees/" class="action-button">Add Employee</a>
+            <a href="/departments/" class="action-button">Create Department</a>
+            <a href="/projects/" class="action-button">Create Project</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
